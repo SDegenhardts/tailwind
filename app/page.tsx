@@ -1,6 +1,9 @@
-import Image from 'next/image'
+import postgres from "./db.js"
 
-export default function Home() {
+export default async function Home() {
+
+  const Todo = await sql ``
+
   return (
 
     <section className='
