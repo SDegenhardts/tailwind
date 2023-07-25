@@ -2,7 +2,8 @@ import postgres from "./db.js"
 
 export default async function Home() {
 
-  const Todo = await sql ``
+  const Todo = await sql `insert into todolist (bol, descricao)
+  values (false,'Refogar repolho')`
 
   return (
 
