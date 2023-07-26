@@ -1,6 +1,6 @@
 import postgres from 'postgres'
 
-const connectionString = "postgresql://postgres:1223344556677889@db.bcvgviarctvvuzjbkpgi.supabase.co:5432/postgres"
+const connectionString = process.env.DATABASE_URL
 const sql = postgres(connectionString)
 
 export default sql
