@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react"
-import { AddTask, tarefas} from "../sant/function"
+import { AddTask, tarefas} from "../sant/insert"
 
 export default function Input(){
 

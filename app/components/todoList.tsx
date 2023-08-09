@@ -1,5 +1,3 @@
-'use client'
-
 import { useEffect, useState } from "react"
 
 import Header from "./header"
@@ -8,17 +6,18 @@ import Incheck from "./incheck"
 import Button from "./button"
 import sql from "../db"
 
-export default function TodoList() {
-    const [todos, setTodos] = useState()
+export default async function TodoList() {
+    // const [todos, setTodos] = useState()
 
-    const getTodos = async () => {
-        const query = await sql`select * from todolist`
-        setTodos(query)
-    }
+    // const getTodos = async () => {
+    //     const query = await sql`select * from todolist`
+    //     setTodos(query)
+    // }
 
-    useEffect(() => {
-    }, [])
-
+    // useEffect(() => {
+    // }, [])
+    const Todo = await sql`select * from todolist`
+    
     return (
         <section className='mb-5 mt-2 bg-blacktext-white min-w-max min-h-screen justify-center flex text-center items-center flex-col text-white'>
             <Header />
